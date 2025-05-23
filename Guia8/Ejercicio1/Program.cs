@@ -71,7 +71,7 @@
         {
             Console.Clear();
 
-            Console.WriteLine($"valor maximo {maximo} valor minimo{minimo}");
+            Console.WriteLine($"valor maximo {maximo} valor minimo {minimo}");
 
             Console.ReadKey();
         }
@@ -81,11 +81,13 @@
             Console.Clear();
             double Prom = CalcularPromedio();
             Console.WriteLine($"promedio: {Prom}");
+            Console.ReadKey();
         }
         static void MostrarPantallaCantidad()
         {
             Console.Clear();
             Console.WriteLine($"Se ingresaron {contador} valores ");
+            Console.ReadKey();
         }
         #endregion
         static void Main(string[] args)
@@ -121,6 +123,8 @@
                     case 6:
                         acumulador = 0;
                         contador = 0;
+                        maximo = 0;
+                        minimo = 0;
                         break;
                     default:
                         op = -1;
